@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Circuitos de Resistencias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Guía Completa de Circuitos de Resistencias</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>1. ¿Qué es un circuito de resistencias?</h2>
+                <p>Un circuito de resistencias está formado por componentes eléctricos llamados <strong>resistencias</strong>, que tienen la función de limitar, dividir o controlar la cantidad de corriente que fluye a través del circuito.</p>
+                <p>Los circuitos pueden organizarse de diferentes maneras, principalmente en:</p>
+                <ul>
+                    <li><strong>Circuitos en serie:</strong> Las resistencias están conectadas una tras otra.</li>
+                    <li><strong>Circuitos en paralelo:</strong> Las resistencias están conectadas en ramas separadas.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>2. Circuito en Serie</h2>
+                <p>En un circuito en serie, todas las resistencias están conectadas una tras otra, formando un único camino para la corriente eléctrica. Si una resistencia falla, el circuito completo se interrumpe.</p>
+                <div class="highlight">
+                    <strong>Características clave:</strong>
+                    <ul>
+                        <li>La corriente es la misma a través de todas las resistencias.</li>
+                        <li>El voltaje total se distribuye entre las resistencias.</li>
+                    </ul>
+                </div>
+                <p><strong>Fórmula para calcular la resistencia equivalente:</strong></p>
+                <p>R<sub>eq</sub> = R<sub>1</sub> + R<sub>2</sub> + R<sub>3</sub> + ...</p>
+                <p><strong>Ejemplo práctico:</strong></p>
+                <p>Supongamos que tienes tres resistencias de 4Ω, 6Ω y 10Ω conectadas en serie. La resistencia total se calcula así:</p>
+                <p>R<sub>eq</sub> = 4 + 6 + 10 = 20Ω</p>
+                <div class="image-container">
+                    <img src="serie.jpg" alt="Circuito en Serie" class="circuit-image">
+                    <p>Figura 1: Ejemplo de un circuito en serie.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>3. Circuito en Paralelo</h2>
+                <p>En un circuito en paralelo, las resistencias están conectadas en varias ramas independientes. Esto permite que la corriente tenga múltiples caminos para fluir.</p>
+                <div class="highlight">
+                    <strong>Características clave:</strong>
+                    <ul>
+                        <li>El voltaje es el mismo a través de todas las resistencias.</li>
+                        <li>La corriente se divide entre las ramas según la resistencia de cada una.</li>
+                    </ul>
+                </div>
+                <p><strong>Fórmula para calcular la resistencia equivalente:</strong></p>
+                <p>1/R<sub>eq</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + 1/R<sub>3</sub> + ...</p>
+                <p><strong>Ejemplo práctico:</strong></p>
+                <p>Si tienes tres resistencias de 6Ω, 12Ω y 18Ω conectadas en paralelo, la resistencia equivalente es:</p>
+                <p>1/R<sub>eq</sub> = 1/6 + 1/12 + 1/18</p>
+                <p>Calculando:</p>
+                <p>1/R<sub>eq</sub> = 0.167 + 0.083 + 0.056 ≈ 0.306</p>
+                <p>R<sub>eq</sub> = 1 / 0.306 ≈ 3.27Ω</p>
+                <div class="image-container">
+                    <img src="paralelo.jpg" alt="Circuito en Paralelo" class="circuit-image">
+                    <p>Figura 2: Ejemplo de un circuito en paralelo.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>4. Circuitos Mixtos</h2>
+                <p>Un circuito mixto es una combinación de circuitos en serie y en paralelo. Es decir, algunas resistencias están conectadas en serie y otras en paralelo dentro del mismo circuito. Este tipo de circuitos es común en aplicaciones prácticas, donde se busca un comportamiento específico en diferentes partes del circuito.</p>
+                <div class="highlight">
+                    <strong>Características clave:</strong>
+                    <ul>
+                        <li>Se combinan los comportamientos de los circuitos en serie y en paralelo.</li>
+                        <li>La resistencia equivalente se calcula teniendo en cuenta ambos tipos de conexión.</li>
+                    </ul>
+                </div>
+                <p><strong>Ejemplo práctico:</strong></p>
+                <p>Supón que tienes un circuito mixto con dos resistencias en serie (4Ω y 6Ω) y una resistencia de 12Ω en paralelo con la combinación de las dos primeras. La resistencia total se calcula de la siguiente manera:</p>
+                <p>Primero, calcula la resistencia equivalente de las resistencias en serie: <strong>R<sub>eq1</sub> = 4Ω + 6Ω = 10Ω</strong>.</p>
+                <p>Luego, calcula la resistencia equivalente del circuito en paralelo: <strong>1/R<sub>eq2</sub> = 1/10Ω + 1/12Ω</strong>.</p>
+                <p>Calculando:</p>
+                <p>1/R<sub>eq2</sub> = 0.1 + 0.0833 = 0.1833</p>
+                <p>R<sub>eq2</sub> = 1 / 0.1833 ≈ 5.46Ω</p>
+                <div class="image-container">
+                    <img src="mixto.png" alt="Circuito Mixto" class="circuit-image">
+                    <p>Figura 3: Ejemplo de un circuito mixto.</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>5. Cómo identificar circuitos</h2>
+                <p>Para reconocer qué tipo de circuito tienes:</p>
+                <ul>
+                    <li><strong>Circuito en serie:</strong> Un solo camino para la corriente eléctrica, con las resistencias conectadas una tras otra.</li>
+                    <li><strong>Circuito en paralelo:</strong> Múltiples caminos para la corriente eléctrica, con las resistencias conectadas en ramas separadas.</li>
+                    <li><strong>Circuito mixto:</strong> Combinación de resistencias en serie y en paralelo dentro del mismo circuito.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
